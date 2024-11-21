@@ -81,24 +81,25 @@
     </build>
 
     <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <url>http://54.166.109.212:8081/repository/maven-releases/</url> <!-- Ensure this URL is correct -->
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </releases>
-        </repository>
+    <repository>
+        <id>releases</id>
+        <url>http://54.166.109.212:8081/repository/maven-releases/</url>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </releases>
+    </repository>
 
-        <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://54.166.109.212:8081/repository/maven-snapshots/</url> <!-- Ensure this URL is correct -->
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </snapshotRepository>
-    </distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <url>http://54.166.109.212:8081/repository/maven-snapshots/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </snapshotRepository>
+</distributionManagement>
+
 
     <profiles>
         <profile>
