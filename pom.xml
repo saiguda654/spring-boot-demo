@@ -16,21 +16,27 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
-    <url/>
+    <url>http://www.example.com</url> <!-- Add a URL if required -->
 
     <licenses>
-        <license/>
+        <license>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
     </licenses>
 
     <developers>
-        <developer/>
+        <developer>
+            <id>developerId</id>
+            <name>Developer Name</name>
+            <email>developer@example.com</email>
+        </developer>
     </developers>
 
     <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
+        <connection>scm:git:git://github.com/example/demo.git</connection>
+        <developerConnection>scm:git:ssh://github.com:example/demo.git</developerConnection>
+        <url>https://github.com/example/demo</url>
     </scm>
 
     <properties>
@@ -69,16 +75,15 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version>  <!-- Check for the latest version -->
+                <version>3.9.1.2184</version>
             </plugin>
         </plugins>
     </build>
 
-    <!-- Distribution management: Define where to deploy SNAPSHOT and RELEASE versions -->
     <distributionManagement>
         <repository>
             <id>releases</id>
-            <url>http://54.166.109.212:8081/repository/maven-releases/</url> <!-- Replace with your Nexus release repository URL -->
+            <url>http://54.166.109.212:8081/repository/maven-releases/</url> <!-- Ensure this URL is correct -->
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -87,7 +92,7 @@
 
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://54.166.109.212:8081/repository/maven-snapshots/</url> <!-- Replace with your Nexus snapshot repository URL -->
+            <url>http://54.166.109.212:8081/repository/maven-snapshots/</url> <!-- Ensure this URL is correct -->
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -95,7 +100,6 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <!-- Optional profiles for controlling deployment -->
     <profiles>
         <profile>
             <id>snapshot</id>
