@@ -100,6 +100,44 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <!-- Add repositories for fetching dependencies -->
+    <repositories>
+        <repository>
+            <id>releases</id>
+            <url>http://54.166.109.212:8081/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+        <repository>
+            <id>snapshots</id>
+            <url>http://54.166.109.212:8081/repository/maven-snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- Add plugin repositories if necessary -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>releases</id>
+            <url>http://54.166.109.212:8081/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+
+        <pluginRepository>
+            <id>snapshots</id>
+            <url>http://54.166.109.212:8081/repository/maven-snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <profiles>
         <profile>
             <id>snapshot</id>
