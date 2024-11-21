@@ -78,7 +78,7 @@
     <distributionManagement>
         <repository>
             <id>releases</id>
-            <url>http://54.166.109.212:8081/repository/maven-snapshots/</url> <!-- Replace with your Nexus release repository URL -->
+            <url>http://54.166.109.212:8081/repository/maven-releases/</url> <!-- Replace with your Nexus release repository URL -->
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
